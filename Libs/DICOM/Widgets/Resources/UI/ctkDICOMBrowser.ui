@@ -75,7 +75,7 @@
         </widget>
        </item>
        <item>
-        <widget class="ctkDirectoryButton" name="DirectoryButton">
+        <widget class="ctkDirectoryButton" name="DirectoryButton" native="true">
          <property name="minimumSize">
           <size>
            <width>200</width>
@@ -134,6 +134,28 @@
     </layout>
    </item>
    <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Project Name: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
     <layout class="QHBoxLayout" name="QueryLayout" stretch="0">
      <property name="spacing">
       <number>0</number>
@@ -145,8 +167,8 @@
       <number>0</number>
      </property>
      <item>
-      <widget class="ctkDICOMTableManager" name="dicomTableManager">
-       <property name="dynamicTableLayout">
+      <widget class="ctkDICOMTableManager" name="dicomTableManager" native="true">
+       <property name="dynamicTableLayout" stdset="0">
         <bool>true</bool>
        </property>
        <property name="m_DynamicLayout" stdset="0">
