@@ -227,6 +227,9 @@ ctkDICOMBrowser::ctkDICOMBrowser(QWidget* _parent):Superclass(_parent),
   //Set ToolBar button style
   d->ToolBar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
 
+  //Set available project names
+  d->projectComboBox->addItem("ALL");
+
   //Initialize Q/R widget
   d->QueryRetrieveWidget = new ctkDICOMQueryRetrieveWidget();
   d->QueryRetrieveWidget->setWindowModality ( Qt::ApplicationModal );
